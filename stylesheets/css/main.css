@@ -36,11 +36,14 @@ a.home {
 
 .single-wrapper {
   margin: 15px 0 5px 0; }
+  .single-wrapper .answer {
+    border-radius: 10px;
+    border: 5px dotted; }
 
 .submit-btn {
   width: 150px;
   height: 50px;
-  margin: 15px 0 10px 0; }
+  margin: 15px 0 100px 0 !important; }
 
 /* ==========================================================================
    Base styles: opinionated defaults
