@@ -1,0 +1,44 @@
+<!-- This is the questions page! -->
+<div class="wrapper">
+	<div class="row nvbr">
+	    <!-- "The Rule of Three" Logo -->
+	    <div class="col-lg-3 left">
+	        <div class="logo">
+	            <a href="#" class="link-logo">The Rule of Three</a>
+	        </div>
+	    </div>
+	    <!-- Filler -->
+	    <div class="col-lg-6 middle"></div> 
+	    <!-- "Home" link -->
+	    <div class="col-lg-3 right">
+	        <a href="http://bpkazemi.github.io" class="home">Home</a>
+	    </div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-2"></div>
+	    <!-- Question Area -->
+	    <div class="col-lg-8">
+	        <div class="question-area" ng-controller='MainCtrl'>
+	            <div class="single-wrapper">
+	                <p class="question">What inspired you today?</p>
+	                <textarea class="answer" ng-model="firstQ"></textarea>
+	            </div>
+	            <div class="single-wrapper">
+	                <p class="question">What motivated you today?</p>
+	                <textarea class="answer" ng-model="secondQ"></textarea>
+	            </div>
+	            <div class="single-wrapper">
+	                <p class="question">What surprised you today?</p>
+	                <textarea class="answer" ng-model="thirdQ"></textarea>
+	            </div>
+	            <div class="button-wrapper">
+	                <button class="btn btn-success submit-btn" ng-click="validateAndSubmit()">Done</button>
+	                <div>{{ answers }}</div>
+	                <div>{{ introspect }}</div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="col-lg-8"></div>
+	</div>
+</div>
